@@ -8,7 +8,7 @@ public class Main {
         System.out.println("\nДемонстарция LiveLock");
         boolean isLiveLockDetected = liveLockDemo();
         if (isLiveLockDetected) {
-            System.out.println("Обнаружен LiveLock");
+            System.out.println("Обнаружен LiveLock!");
         }
         printerDemo();
     }
@@ -61,7 +61,7 @@ public class Main {
         System.out.println("Main Thread: Thread 1 - " + threads[0].getState() + "\n" +
                            "Main Thread: Thread 2 - " + threads[1].getState() + "\n" +
                            "Main Thread: Оба потока активны, но не могут завершить работу. Обнаружен LiveLock");
-        return false;
+        return true;
     }
 
     public static void printerDemo() {
